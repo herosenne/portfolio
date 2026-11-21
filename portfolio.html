@@ -1,104 +1,92 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senne Van Ginckel - projecten die hij allemaal heeft gemaakt</title>
-    <meta name="description" content="Dit is de project pagina van Senne Van Ginckel kom hier meer te weten over hem en neem eventueel contact op">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Senne Van Ginckel - project die hij heeft gemaakt</title>
+    <meta name="description" content="Dit is een project van Senne Van Ginckel kom hier meer te weten over een project en hoe het werkt.">
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute text-white">Ga naar de inhoud</a>
-<body class="bg-gray-50 text-gray-800">
-    <div class="max-w-6xl mx-auto px-4 py-6 space-y-6">
-
-        
-        <header class="bg-gray-100 p-4 rounded-xl flex flex-col sm:flex-row justify-between items-center gap-4">
-            <a href="index.html" class="font-bold text-xl tracking-wide"><img src="images/logo.png" alt="logo" width="50" height="50"></a>
-            <label for="menu-knop" class="cursor-pointer rounded-lg border border-gray-300 px-3 py-2 peer-focusvisible:outline-2 md:hidden">Menu</label>
-                <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
-                    <ul class="flex flex-col md:flex-row md:gap-2">
-                        <li>
-                            <a href="index.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100" >Home</a>
-                        </li>
-                        <li>
-                            <a href="portfolio.html" aria-current="page" class="block px-3 py-2 rounded-lg bg-blue-100 text-blue-800 font-semibold">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="project.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Project</a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+<body>
+    <div class="flex flex-col gap-3">
+        <header class="flex flex-col gap-3 py-4 border-b border-gray-200 sm:flex-row items-center justify-between">
+            <a href="index.html"><img src="images/site-logo.png" alt="Dit is het logo van de site van de webiste" height="50" width="50" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 rounded-lg hover:bg-slate-950/40"></a>
+            <nav>
+                <ul class="flex flex-wrap gap-x-6 gap-y-2">
+                    <li><a href="index.html"  class="bg-amber-950/40 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40  hover:px-4 hover:py-3 ">Home</a></li>
+                    <li><a href="portfolio.html" aria-current="page" class="bg-amber-950 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40  hover:px-4 hover:py-3 ">Portfolio</a></li>
+                    <!-- <li><a href="project.html" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950 hover:px-4 hover:py-3" >Project</a></li> -->
+                    <li><a href="contact.html" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40 hover:px-4 hover:py-3" >Contact</a></li>
+                </ul>
+            </nav>
+            <a href="https://github.com/herosenne" target="_blank"><img src="images/github.png" alt="Dit is een link naar mijn github pagina" height="50" width="50" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 rounded-lg hover:bg-slate-950/40"></a>
         </header>
 
-        
-        <main id="inhoud" class="bg-gray-100 p-6 rounded-xl space-y-6">
-            <section>
-                <h1 class="text-2xl md:text-4xl font-bold mb-2">Mijn Portfolio</h1>
-                <p class="text-gray-700">Overzicht</p>
+        <main class="grid grid-cols-9 gap-4 p-4 max-w-7xl mx-auto">
+            <aside class="col-span-9 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4">
+                <h1 class="text-2xl text-gray-200">Welkom op mijn project pagina.</h1>
+                <p class="text-gray-200">Op deze pagina staan al mijn projecten veel plezier met er door te kijken.</p>
+            </aside>
+            
+            <section class="col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <a href="project.html">
+                    <img src="images/placeholder.png" alt="Foto van project1" class="rounded-lg border border-amber-400/40">
+                    <h1 class="text-3xl text-gray-200 pb-4 ">Project</h1>
+                    <p class="text-gray-200 border-t border-gray-200 pb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae impedit quia dicta quos, non necessitatibus dolorem voluptates omnis commodi rem totam quo veniam architecto nesciunt praesentium error quibusdam, aspernatur esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, asperiores magnam eos ratione quae ut voluptates quasi autem accusantium magni ipsam corrupti cumque error eum qui? Facere tempore aliquid saepe.</p>
+                </a>
+            </section>
+            <section class="col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <a href="project.html">
+                    <img src="images/placeholder.png" alt="Foto van project1" class="rounded-lg border border-amber-400/40">
+                    <h1 class="text-3xl text-gray-200 pb-4 ">Project</h1>
+                    <p class="text-gray-200 border-t border-gray-200 pb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae impedit quia dicta quos, non necessitatibus dolorem voluptates omnis commodi rem totam quo veniam architecto nesciunt praesentium error quibusdam, aspernatur esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, asperiores magnam eos ratione quae ut voluptates quasi autem accusantium magni ipsam corrupti cumque error eum qui? Facere tempore aliquid saepe.</p>
+                </a>
+            </section>
+            <section class="col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <a href="project.html">
+                    <img src="images/placeholder.png" alt="Foto van project1" class="rounded-lg border border-amber-400/40">
+                    <h1 class="text-3xl text-gray-200 pb-4 ">Project</h1>
+                    <p class="text-gray-200 border-t border-gray-200 pb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae impedit quia dicta quos, non necessitatibus dolorem voluptates omnis commodi rem totam quo veniam architecto nesciunt praesentium error quibusdam, aspernatur esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, asperiores magnam eos ratione quae ut voluptates quasi autem accusantium magni ipsam corrupti cumque error eum qui? Facere tempore aliquid saepe.</p>
+                </a>
+            </section>
+            <section class="col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <a href="project.html">
+                    <img src="images/placeholder.png" alt="Foto van project1" class="rounded-lg border border-amber-400/40">
+                    <h1 class="text-3xl text-gray-200 pb-4 ">Project</h1>
+                    <p class="text-gray-200 border-t border-gray-200 pb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae impedit quia dicta quos, non necessitatibus dolorem voluptates omnis commodi rem totam quo veniam architecto nesciunt praesentium error quibusdam, aspernatur esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, asperiores magnam eos ratione quae ut voluptates quasi autem accusantium magni ipsam corrupti cumque error eum qui? Facere tempore aliquid saepe.</p>
+                </a>
+            </section>
+            <section class="col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <a href="project.html">
+                    <img src="images/placeholder.png" alt="Foto van project1" class="rounded-lg border border-amber-400/40">
+                    <h1 class="text-3xl text-gray-200 pb-4 ">Project</h1>
+                    <p class="text-gray-200 border-t border-gray-200 pb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae impedit quia dicta quos, non necessitatibus dolorem voluptates omnis commodi rem totam quo veniam architecto nesciunt praesentium error quibusdam, aspernatur esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, asperiores magnam eos ratione quae ut voluptates quasi autem accusantium magni ipsam corrupti cumque error eum qui? Facere tempore aliquid saepe.</p>
+                </a>
+            </section>
+            <section class="col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <a href="project.html">
+                    <img src="images/placeholder.png" alt="Foto van project1" class="rounded-lg border border-amber-400/40">
+                    <h1 class="text-3xl text-gray-200 pb-4 ">Project</h1>
+                    <p class="text-gray-200 border-t border-gray-200 pb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae impedit quia dicta quos, non necessitatibus dolorem voluptates omnis commodi rem totam quo veniam architecto nesciunt praesentium error quibusdam, aspernatur esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, asperiores magnam eos ratione quae ut voluptates quasi autem accusantium magni ipsam corrupti cumque error eum qui? Facere tempore aliquid saepe.</p>
+                </a>
             </section>
 
             
-            <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-               
-                <article class="bg-white p-4 rounded-lg border border-gray-200 flex flex-col space-y-3">
-                    <img src="images/placeholder.png" alt="Project 1" width="400" height="300" class="w-full h-48 object-cover rounded-md">
-                    <h2 class="font-bold text-lg">Project 1</h2>
-                    <p class="text-sm text-gray-600 flex-row">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita nulla commodi rem laudantium, distinctio cupiditate architecto recusandae veritatis neque, minima labore! Reprehenderit cumque accusantium officiis nihil dolores voluptatibus ducimus maxime?</p>
-                </article>
-
-                
-                <article class="bg-white p-4 rounded-lg border border-gray-200 flex flex-col space-y-3">
-                    <img src="images/placeholder.png" alt="Project 2" width="400" height="300" class="w-full h-48 object-cover rounded-md">
-                    <h2 class="font-bold text-lg">Project 2</h2>
-                    <p class="text-sm text-gray-600 flex-row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus laboriosam animi earum est autem at eos expedita saepe sint, voluptate fugit, veniam ipsa repellat commodi quo, repudiandae ut asperiores culpa?</p>
-                </article>
-
-                
-                <article class="bg-white p-4 rounded-lg border border-gray-200 flex flex-col space-y-3">
-                    <img src="images/placeholder.png" alt="Project 3" width="400" height="300" class="w-full h-48 object-cover rounded-md">
-                    <h2 class="font-bold text-lg">Project 3</h2>
-                    <p class="text-sm text-gray-600 flex-row">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum velit inventore a, eos veniam, sed modi consequatur pariatur delectus magni consequuntur maiores debitis nostrum laborum, nulla sequi itaque aspernatur rem?</p>
-                </article>
-
-                
-                <article class="bg-white p-4 rounded-lg border border-gray-200 flex flex-col space-y-3">
-                    <img src="images/placeholder.png" alt="Project 4" width="400" height="300" class="w-full h-48 object-cover rounded-md">
-                    <h2 class="font-bold text-lg">Project 4</h2>
-                    <p class="text-sm text-gray-600 flex-row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut pariatur odit cum, nihil tempore dolorem quibusdam aliquid accusantium, modi cumque dicta facilis nobis. Dolor reprehenderit ducimus ipsam odit possimus.</p>
-                </article>
-
-               
-                <article class="bg-white p-4 rounded-lg border border-gray-200 flex flex-col space-y-3">
-                    <img src="images/placeholder.png" alt="Project 5" width="400" height="300" class="w-full h-48 object-cover rounded-md">
-                    <h2 class="font-bold text-lg">Project 5</h2>
-                    <p class="text-sm text-gray-600 flex-row">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi laboriosam vero labore neque error temporibus laudantium distinctio omnis alias tempore ipsa dicta, unde illum earum culpa nesciunt possimus libero nobis!</p>
-                </article>
-
-               
-                <article class="bg-white p-4 rounded-lg border border-gray-200 flex flex-col space-y-3">
-                    <img src="images/placeholder.png" alt="Project 6" width="400" height="300" class="w-full h-48 object-cover rounded-md">
-                    <h2 class="font-bold text-lg">Project 6</h2>
-                    <p class="text-sm text-gray-600 flex-row">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse fuga soluta minima iusto exercitationem quasi sit commodi recusandae quas repudiandae, quam obcaecati, ad ipsam asperiores odio at reiciendis deserunt quisquam.</p>
-                </article>
-
-            </section>
         </main>
 
-       
-        <footer class="bg-gray-100 p-4 rounded-xl flex flex-col sm:flex-row justify-between items-center gap-2 text-sm text-gray-600">
-            <p>&copy; 2026 Senne Van Ginckel.</p>
-            <a href="mailto:sennevanginckel@hotmail.com" class="hover:underline">sennevanginckel@hotmail.com</a>
+        <footer class="flex flex-row gap-3 border-t border-gray-200 items-center justify-between p-2 bg-slate-950/60 rounded-b-lg">
+            <div class="ml-4">
+                <p class="text-amber-200/90">Senne Van Gincel</p>
+                <p class="text-slate-400 text-xs">Portfolio</p>
+            </div>
+            <a href="contact.html" class="px-3 py-2 rounded-lg hover:border hover:border-amber-400/40 hover:bg-slate-950 text-amber-200 hover:px-4 hover:py-3">mail mij</a>
+            <p class="text-amber-200 text-sm mr-4 py-6"> &copy; 2026</p>
         </footer>
+    
+    </div>  
 
-    </div>
-
+    
 </body>
 </html>

@@ -1,76 +1,112 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senne Van Ginckel - Home pagina van zijn website</title>
-    <meta name="description" content="De thuis pagina van de webite van Senne Van Ginckel dit is de pagina die je brengt naar alle projecten en info van de maker.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Senne Van Ginckel - project die hij heeft gemaakt</title>
+    <meta name="description" content="Dit is een project van Senne Van Ginckel kom hier meer te weten over een project en hoe het werkt.">
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute text-white">Ga naar de inhoud</a>
-<body class="bg-gray-50 text-gray-800">
-    <div class="max-w-6xl mx-auto px-4 py-6 space-y-6">
-
-        
-        <header class="bg-gray-100 p-4 rounded-xl flex flex-col sm:flex-row justify-between items-center gap-4">
-            <a href="index.html" class="font-bold text-xl"><img src="images/logo.png" alt="logo" width="50" height="50"></a>
-            <label for="menu-knop" class="cursor-pointer rounded-lg border border-gray-300 px-3 py-2 peer-focusvisible:outline-2 md:hidden">Menu</label>
-                <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
-                    <ul class="flex flex-col md:flex-row md:gap-2">
-                        <li>
-                            <a href="index.html" aria-current="page" class="block px-3 py-2 rounded-lg bg-blue-100 text-blue-800 font-semibold">Home</a>
-                        </li>
-                        <li>
-                            <a href="portfolio.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="project.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Project</a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+<body>
+    <div class="flex flex-col gap-3 ">
+        <header class="flex flex-row gap-3 py-4 border-b border-gray-200 items-center justify-between">
+            <a href="index.html"><img src="images/site-logo.png" alt="Dit is het logo van de site van de webiste" height="50" width="50" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 rounded-lg hover:bg-slate-950/40"></a>
+            <nav>
+                <ul class="flex flex-wrap gap-x-6 gap-y-2">
+                    <li><a href="index.html" aria-current="page" class="bg-amber-950 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40  hover:px-4 hover:py-3 ">Home</a></li>
+                    <li><a href="portfolio.html" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40  hover:px-4 hover:py-3 ">Portfolio</a></li>
+                    <!-- <li><a href="project.html" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950 hover:px-4 hover:py-3" >Project</a></li> -->
+                    <li><a href="contact.html" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40 hover:px-4 hover:py-3" >Contact</a></li>
+                </ul>
+            </nav>
+            <a href="https://github.com/herosenne" target="_blank"><img src="images/github.png" alt="Dit is een link naar mijn github pagina" height="50" width="50" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 rounded-lg hover:bg-slate-950/40"></a>
         </header>
 
-       
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            
-            <main id="inhoud" class="md:col-span-2 bg-gray-100 p-6 rounded-xl space-y-4">
-                <section>
-                    <h1 class="text-2xl md:text-4xl font-bold mb-4">Welkom op mijn portfolio</h1>
-                    <p class="leading-relaxed text-gray-700">
-                        Hallo ik ben Senne Van Ginckel. Ik studeer op AP Hogenschool in Antwerpen campus Ellerman. Op deze webiste ga je al mijn <a href="portfolio.html" class="underline">projecten</a> vinden en meer info over mij. Indien je mij wilt contacteren of mijn projecten echt wilt zien ga naar de pagina <a href="contact.html" class="underline">contact</a>.
-                    </p>
-                </section>
-                
-                <section class="pt-4">
-                    <h2 class="text-xl md:text-2xl font-bold mb-4">Meer info over mij</h2>
-                    <p class="leading-relaxed text-gray-700">
-                     Ik heb een opleiding applicatie en databeheer gedaan, ook heb ik al stage gelopen in bedrijven. Nu ben ik bezig aan de opelidng systeem en netwerkbeheer aan AP. Om zo nog verder te kunnen bouwen op de kennis dat ik nu al heb en ook meer te kunnen.
-                    </p>
-                </section>
-            </main>
+        
+        <main class="grid grid-cols-8 gap-4 p-4 max-w-7xl mx-auto">
 
-            
-            <aside class="bg-gray-100 p-6 rounded-xl flex flex-col justify-center items-center">
-                <img src="images/foto.jpeg" alt="" width="10" height="100" class="w-full h-auto rounded-full object-cover">
+            <aside class="col-span-2 "> 
+                <img src="images/placeholder.png" alt="Foto van Senne Van Ginckel" class="border shadow shadow-amber-400/40 border-amber-400/40 rounded-lg">
             </aside>
 
-        </div>
+            <section class="col-span-6 p-4 text-left">
+                <h1 class="text-gray-200 text-4xl">Hallo ik Ben <span class="text-amber-200"> Senne Van Ginckel</span> </h1>
+                <h1 class="text-gray-200 text-4xl">student systeem en netwerkbeheerder</h1>
+                <p class="text-gray-200 pt-4">Ik vind het geweldig om aan servers te knuteslenen,</p>
+                <p class="text-gray-200 ">internet aansluiting te leggen, te configureren en server in te stellen.</p>
+                <p class="text-gray-200 pb-4">Veel kijk plezier op mijn portfolio, bij vragen neem contact op.</p>
+                <a href="contact.html" class="bg-amber-950 text-amber-200 border border-amber-400/40 px-4 py-2 rounded-lg">Contacteer mij</a>
+            </section>
+            <div class="col-span-8 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4">
+                <h1 class="text-2xl text-gray-200">Traject</h1>
+                <p class="text-gray-200">Hier zie je het traject dat ik momenteel al heb afgelegt.</p>
+            </div>
+            <section class="col-span-4 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <h1 class="text-3xl text-gray-200 pb-4 ">Applicatie en databeheer <span class="border rounded-lg border-green-400 bg-green-700/40 text-lg px-3 py-1">Gedaan</span></h1>
+                <p class="text-gray-200 border-b border-gray-200 pb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae impedit quia dicta quos, non necessitatibus dolorem voluptates omnis commodi rem totam quo veniam architecto nesciunt praesentium error quibusdam, aspernatur esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, asperiores magnam eos ratione quae ut voluptates quasi autem accusantium magni ipsam corrupti cumque error eum qui? Facere tempore aliquid saepe.</p>
+                <ul class="flex flex-wrap gap-x-1 gap-y-1 pt-2 text-sm">
+                    <li class="bg-white/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">HTML / PHP / JS / CSS</li>
+                    <li class="bg-white/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Flowgoritme / C#</li>
+                    <li class="bg-white/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Netwerken</li>
+                    <li class="bg-white/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Hardware</li>
 
-       
-        <footer class="bg-gray-100 p-4 rounded-xl flex flex-col sm:flex-row justify-between items-center gap-2 text-sm text-gray-600">
-            <p>&copy; 2026 Senne Van Ginckel</p>
-            <a href="mailto:sennevanginckel@hotmail.com" class="hover:underline">sennevanginckel@hotmail.com</a>
+                    
+                </ul>
+            </section>
+
+            <section class="col-span-4 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <h1 class="text-3xl text-gray-200 pb-4">Systeem en netwerkbeheer <span class="border rounded-lg border-yellow-400 bg-yellow-700/40 text-lg px-3 py-1">bezig</span></h1>
+                <p class="text-gray-200 border-b border-gray-200 pb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae reprehenderit temporibus dolorem consectetur, odio saepe maxime nemo consequuntur, vel provident doloremque, minima animi! Et sapiente officiis cum sunt fuga sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae et eaque maiores perspiciatis tempora magnam, cum nisi repellendus non optio aliquam, voluptatibus illo neque! Facere delectus voluptate saepe? Quisquam.</p>
+                <ul class="flex flex-wrap gap-x-1 gap-y-1 pt-2 text-sm">
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Python</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Windows Server</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Linux</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Tailwind</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Cisco</li>
+                </ul>
+            </section>
+
+            <section class="col-span-4 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <h1 class="text-3xl text-gray-200 pb-4">Vrijwilligerswerk / studentenjob <span class="border rounded-lg border-green-400 bg-green-700/40 text-lg px-3 py-1">gedaan</span></h1>
+                <p class="text-gray-200 border-b border-gray-200 pb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae reprehenderit temporibus dolorem consectetur, odio saepe maxime nemo consequuntur, vel provident doloremque, minima animi! Et sapiente officiis cum sunt fuga sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae et eaque maiores perspiciatis tempora magnam, cum nisi repellendus non optio aliquam, voluptatibus illo neque! Facere delectus voluptate saepe? Quisquam.</p>
+                <ul class="flex flex-wrap gap-x-1 gap-y-1 pt-2 text-sm">
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Communicatie</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Paraatheid</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Probleemoplossen denken</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">schakelen</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Begrenzend werken</li>
+                </ul>
+            </section>
+            <section class="col-span-4 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <h1 class="text-3xl text-gray-200 pb-4">Stage PC-yellow <span class="border rounded-lg border-green-400 bg-green-700/40 text-lg px-3 py-1">gedaan</span></h1>
+                <p class="text-gray-200 border-b border-gray-200 pb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae reprehenderit temporibus dolorem consectetur, odio saepe maxime nemo consequuntur, vel provident doloremque, minima animi! Et sapiente officiis cum sunt fuga sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae et eaque maiores perspiciatis tempora magnam, cum nisi repellendus non optio aliquam, voluptatibus illo neque! Facere delectus voluptate saepe? Quisquam.</p>
+                <ul class="flex flex-wrap gap-x-1 gap-y-1 pt-2 text-sm">
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Reparatie gsm</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Reparatie laptop</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Reparatie desktop</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">Reparatie all in one pc</li>
+                    <li class="bg-gray-500/40 border border-gray-900 px-2 py-1 m-2 rounded-lg">data analyse</li>
+                </ul>
+            </section>
+            
+        </main>
+
+            
+        
+        
+
+        <footer class="flex flex-row gap-3 border-t border-gray-200 items-center justify-between p-2 bg-slate-950/60 rounded-b-lg">
+            <div class="ml-4">
+                <p class="text-amber-200/90">Senne Van Gincel</p>
+                <p class="text-slate-400 text-xs">Portfolio</p>
+            </div>
+            <a href="contact.html" class="px-3 py-2 rounded-lg hover:border hover:border-amber-400/40 hover:bg-slate-950 text-amber-200 hover:px-4 hover:py-3">mail mij</a>
+            <p class="text-amber-200 text-sm mr-4 py-6"> &copy; 2026</p>
         </footer>
+    
+    </div>  
 
-    </div>
-
+    
 </body>
 </html>
