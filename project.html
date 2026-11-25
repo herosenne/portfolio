@@ -5,44 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senne Van Ginckel - project die hij heeft gemaakt</title>
     <meta name="description" content="Dit is een project van Senne Van Ginckel kom hier meer te weten over een project en hoe het werkt.">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="css/tailwind.css">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="flex flex-col gap-3">
-        <header class="flex flex-col gap-3 py-4 border-b border-gray-200 sm:flex-row items-center justify-between">
+
+        <header class="flex gap-3 py-4 border-b border-gray-200 items-center flex-row justify-between">
             <a href="index.html"><img src="images/site-logo.png" alt="Dit is het logo van de site van de webiste" height="50" width="50" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 rounded-lg hover:bg-slate-950/40"></a>
-            <nav>
+            
+            <input type="checkbox" id="menu-knop" class="peer sr-only"/>
+            <label for="menu-knop" class="bg-amber-950 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40 hover:px-4 hover:py-3 md:hidden">Menu</label>
+            
+            <nav class="hidden w-full peer-checked:block md:block md:w-auto">
                 <ul class="flex flex-wrap gap-x-6 gap-y-2">
-                    <li><a href="index.html" aria-current="page" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40  hover:px-4 hover:py-3 ">Home</a></li>
-                    <li><a href="portfolio.html" class="bg-amber-950 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40  hover:px-4 hover:py-3 ">Portfolio</a></li>
+
+                    <li><a href="index.html"   class="bg-amber-950/40 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40  hover:px-4 hover:py-3 ">Home</a></li>
+
+                    <li><a href="portfolio.html" aria-current="page" class="bg-amber-950 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40  hover:px-4 hover:py-3 ">Portfolio</a></li>
+
                     <!-- <li><a href="project.html" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950 hover:px-4 hover:py-3" >Project</a></li> -->
+                     
                     <li><a href="contact.html" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 px-3 py-2 rounded-lg hover:bg-slate-950/40 hover:px-4 hover:py-3" >Contact</a></li>
                 </ul>
             </nav>
-            <a href="https://github.com/herosenne" target="_blank"><img src="images/github.png" alt="Dit is een link naar mijn github pagina" height="50" width="50" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 rounded-lg hover:bg-slate-950"></a>
+
+            <a href="https://github.com/herosenne" target="_blank"><img src="images/github.png" alt="Dit is een link naar mijn github pagina" height="50" width="50" class="bg-amber-950/40 text-amber-200 border border-amber-400/40 rounded-lg hover:bg-slate-950/40"></a>
         </header>
 
-        <main>
+        <main class="grid grid-cols-3 md:grid-cols-9 gap-4 p-4 max-w-7xl mx-auto">
+            <section class=" col-span-3 md:col-span-2">
+                <img src="images/crafty.jpg" alt="Foto van Senne Van Ginckel" class="border shadow shadow-amber-400/40 border-amber-400/40 rounded-lg">
+            </section>
 
+            <section class=" col-span-3 md:col-span-6 p-4 text-left">
+                <h1 class="text-gray-200 text-4xl">Project <span class="text-amber-200">CasaOS / Crafty</span></h1>
+                <p class="text-gray-200 pt-4 pb-4">Dit project dient voor het creëren van een Minecraft server. Door gebruik te maken van de debian cli  waarop CasaOs draait. Op CasaOs draait de applicatie crafty die het aanmaken van minecraft severs zeer gemakkelijk maakt. Zo dat als je een minecraft server maakt dit gemakkelijk aan te maken is en te delen. </p>
+            </section>
+
+            <section class="col-span-3 md:col-span-9 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <h1 class="text-2xl text-gray-200">Uitleg</h1>
+                <p class="text-gray-200">Hieronder zie je de uitleg over hoe het systeem werkt.</p>
+            </section>
+
+            <section class=" col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <img src="images/debian-logo-1024x576.png" width="369" height="246" alt="Foto van project1" class="rounded-lg border border-amber-400/40 bg-">
+                <h1 class="text-3xl text-gray-200 pb-4 pt-4 ">Debian</h1>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">De os waar het project op draait is de Debian cli. Dit is een linux distro die geen grafische interface heeft. Dat is om er voor te zorgen dat deze os zo weinig mogelijk resources gebruikt. Om er voor te zorgen dat er zoveel mogelijk resources naar de minecraft servers kan gaan.</p>
+            </section>
+            <section class="col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <img src="images/MlXdsRut_400x400.jpg" width="369" height="246" alt="Foto van project1" class="rounded-lg border border-amber-400/40">
+                <h1 class="text-3xl text-gray-200 pb-4 ">CasaOS</h1>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">CasaOs is een web beheerapplicatie die op debian draait. Deze applicatie dient zo dat je van op een andere pc gemakkelijk kunt verbinden via een webapplicatie. Hier op kun je dan ook andere applicaties downloaden die op de server dan draaien.</p>
+            </section>
+            <section class="col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <img src="images/crafty.jpg" width="369" height="246" alt="Foto van project1" class="rounded-lg border border-amber-400/40">
+                <h1 class="text-3xl text-gray-200 pb-4 ">Crafty</h1>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">Crafty is de applicatie die er voor zorgt dat je makkelijk de minecraft server kunt maken en draaien.  Dit geeft een overzichtelijk dashboard waarop je kan zien hoeveel server er draaien hoeveel mensen er online zijn en je kan ook heel gemakkelijk er plugins in slepen.</p>
+            </section>
+
+            <section class=" col-span-3 md:col-span-9 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <h1 class="text-2xl text-gray-200">Guide</h1>
+                <p class="text-gray-200">Hier onder zie je een stap voor stap uitleg om het te doen</p>
+            </section>
+
+            <section class="col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <img src="images/debian-logo-1024x576.png" width="369" height="246" alt="Foto van project1" class="rounded-lg border border-amber-400/40 bg-">
+                <h1 class="text-3xl text-gray-200 pb-4 pt-4 ">Debian installeren</h1>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">1. download balena etcher <a href="https://etcher.balena.io/">(klik hier)</a></p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">2. klik flash from url</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">3. Gebruik deze url <a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.8.0-amd64-netinst.iso">(klik hier)</a></p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">4. Flash je usb</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">5. boot in de usb in de pc van keuze</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">6. Ga door de instalatie procedure</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">7. Klaar</p>
+            </section>
+            <section class="col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <img src="images/MlXdsRut_400x400.jpg" width="369" height="246" alt="Foto van project1" class="rounded-lg border border-amber-400/40">
+                <h1 class="text-3xl text-gray-200 pb-4 ">CasaOS / installeren</h1>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">1. Log in op je debian</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">2. Update debian / install curl:</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">sudo apt update && sudo apt install -y curl</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">3. install CasaOs:</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">curl -fsSL https://get.casaos.io | sudo bash</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">4. surf naar het ip dat je krijgt</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">5. maak een account</p>
+            </section>
+
+            <section class="col-span-3 border-2 border-amber-400/40 bg-slate-950/20 rounded-lg mt-4 p-4 hover:bg-slate-950/40">
+                <img src="images/crafty.jpg" width="369" height="246" alt="Foto van project1" class="rounded-lg border border-amber-400/40">
+                <h1 class="text-3xl text-gray-200 pb-4 ">Crafty</h1>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">1. Ga in de app store in CasaOs</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">2. Zoek crafty en download</p>
+                <p class="text-gray-200 border-t border-gray-200 pb-4">3. Klik op de app (er opent een nieuwe browser)</p>
+                <p class="text-gray-200 border-t border-gray-200">4. Log daar op in (default = admin) passwoord staat in config</p>
+            </section>
         </main>
-
-        <aside>
-
-        </aside>
 
         <footer class="flex flex-row gap-3 border-t border-gray-200 items-center justify-between p-2 bg-slate-950/60 rounded-b-lg">
             <div class="ml-4">
                 <p class="text-amber-200/90">Senne Van Gincel</p>
                 <p class="text-slate-400 text-xs">Portfolio</p>
             </div>
-            <a href="contact.html" class="px-3 py-2 rounded-lg hover:border hover:border-amber-400/40 hover:bg-slate-950 text-amber-200 hover:px-4 hover:py-3">mail mij</a>
+            <a href="contact.html" class="px-3 py-2 rounded-lg hover:border hover:border-amber-400/40 hover:bg-slate-950 text-amber-200 hover:px-4 hover:py-3">Mail mij</a>
             <p class="text-amber-200 text-sm mr-4 py-6"> &copy; 2026</p>
         </footer>
-    
-    </div>  
-
-    
+        
+    </div>
 </body>
 </html>
